@@ -45,6 +45,8 @@ alt="" width="240" height="180" border="10" /></a>
 alt="" width="240" height="180" border="10" /></a>
 
 # Other
+I used [This VTS plugin](https://lualucky.itch.io/vts-desktop-audio-plugin) and [VB Audio cable](https://vb-audio.com/Cable/) to make her mouth move and be able to play music at the same time
+
 Please note that this project was created solely for fun and as part of a YouTube video, so the quality and reliability of the code may be questionable. Also, after the completion of the project checklist, there won't be much activity in updating or improving this repository. Nonetheless, we hope that this project can serve as a source of inspiration for anyone interested in building their own AI Vtuber.
 
 - [ ] Clean up
