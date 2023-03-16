@@ -1,0 +1,5 @@
+pytchat
+openai
+pydub
+pyttsx3
+simpleaudio
