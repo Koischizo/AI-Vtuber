@@ -8,27 +8,34 @@ Install dependencies
 ```
 git clone https://github.com/Koischizo/AI-Vtuber/
 cd AI-Vtuber
-pip install pytchat openai pydub pyttsx3 simpleaudio
+pip install -r requirements.txt
 ```
 It also requires [`ffmpeg`](https://ffmpeg.org/) to be installed
 
 # Usage
 
-Edit the variables `video_id`, `EL_key`, `EL_voice` and `OAI_key` in `run.py`
-
-`video_id` is the ID of the Youtube stream found in the Youtube link
+Edit the variables `EL_key` and `OAI_key` in `config.json`
 
 `EL_key` is the API key for [ElevenLabs](https://beta.elevenlabs.io/). Found in Profile Settings
-
-`EL_voice` is the voice ID for ElevenLabs. Found in the [docs](https://api.elevenlabs.io/docs) in `Get Voices`
 
 `OAI_key` is the API key for OpenAI. Found [here](https://platform.openai.com/account/api-keys)
 
 Then run `run.py`
+
+### Default TTS
 ```
-python run.py
+python run.py -id STREAMID 
+```
+### Elevenlabs TTS
+```
+python run.py -id STREAMID -tts EL 
 ```
 then you're set
+## Notes
+Replace `STREAMID` with the stream's ID that you can find on the Youtube Stream link
+
+You can change the voice by changing `voice` in `config.json`. You can find the ID's [here](https://api.elevenlabs.io/docs) in `Get Voices`
+
 
 
 # Live Demo
@@ -49,7 +56,7 @@ I used [This VTS plugin](https://lualucky.itch.io/vts-desktop-audio-plugin) and 
 
 Please note that this project was created solely for fun and as part of a YouTube video, so the quality and reliability of the code may be questionable. Also, after the completion of the project checklist, there won't be much activity in updating or improving this repository. Nonetheless, we hope that this project can serve as a source of inspiration for anyone interested in building their own AI Vtuber.
 
-- [ ] Clean up
+- [x] Clean up
 - [ ] GUI
 - [ ] Executables (exe, bat or sh)
 - [ ] Extra features (maybe) (Prompt injection protection, questions only mode, virtual audio)
