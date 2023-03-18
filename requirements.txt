@@ -3,3 +3,5 @@ openai
 pydub
 pyttsx3
 simpleaudio
+pyaudio
+ffmpeg
